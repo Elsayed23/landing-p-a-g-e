@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <!-- viewport -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Main Css File -->
+  <link rel="stylesheet" href="/css/main.css">
+  <!-- Fontwesome library -->
+  <link rel="stylesheet" href="/css/all.min.css">
+  <!-- Page Title -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Elsayed Kewan | landing page</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    /* Start Global Rules */
+    ::-webkit-scrollbar {
+      background-image: linear-gradient(to top, #24c2a9, #8896ff);
+      width: 18px;
+      border-radius: 7px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background-color: #4d545c;
+      border-radius: 7px;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Quicksand', sans-serif;
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    .container {
+      padding-left: 15px;
+      padding-right: 15px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    :root {
+      --section-padding: 100px;
+    }
+
+    ::selection {
+      background-color: #23bba6;
+      color: #ffffff;
+    }
+
+    .top-content {
+      width: 630px;
+      text-align: center;
+      margin: 0 auto 80px;
+    }
+
+    .top-content h1 {
+      color: #4b555e;
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+
+    .top-content p {
+      font-size: 16.5px;
+      line-height: 1.7;
+      color: #a9aeb2;
+    }
+
+    /* End Global Rules */
+    /* Start Landing */
+    .landing {
+      background-image: url("D:\test-projects\clipboard-landing-page-master\images\bg-header-desktop.png");
+      height: 100vh;
+      background-size: cover;
+      background-repeat: no-repeat;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+
+    .landing img {
+      margin-bottom: 37px;
+    }
+
+    .landing h1 {
+      color: #4d545c;
+      margin-bottom: 20px;
+    }
+
+    .landing P {
+      COLOR: #9da2a5;
+      width: 630px;
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 18px;
+      line-height: 1.7;
+    }
+
+    .buttons button {
+      padding: 13px 28px;
+      font-size: 17px;
+      border-radius: 18px;
+      border: none;
+      color: #ffff;
+      cursor: pointer;
+    }
+
+    .buttons button:first-child {
+      background-color: #5dccbb;
+      border-bottom: solid 5px #4bbca8;
+      margin-right: 10px;
+      transition: .5s;
+      box-shadow: 0 5px 10px #4bbca8;
+    }
+
+    .buttons button:last-child {
+      background-color: #8896ff;
+      border-bottom: solid 5px #8087df;
+      transition: .5s;
+      box-shadow: 0 5px 10px #8087df;
+    }
+
+    .buttons button:first-child:hover {
+      background-color: #4bbca8;
+    }
+
+    .buttons button:last-child:hover {
+      background-color: #8087df;
+    }
+
+    /* End Landing */
+    /* Start sec-b */
+    .sec-b {
+      padding-top: var(--section-padding);
+      padding-bottom: var(--section-padding);
+      position: relative;
+    }
+
+    .sec-b .b-b-c {
+      display: flex;
+      align-items: center;
+    }
+
+    .sec-b .b-b-c ul {
+      margin-left: 100px;
+    }
+
+    .sec-b .b-b-c ul li {
+      width: 290px;
+      margin-bottom: 50px;
+    }
+
+    .sec-b .b-b-c ul li h3 {
+      color: #4d5256;
+      margin-bottom: 10px;
+    }
+
+    .sec-b .b-b-c ul li p {
+      line-height: 1.6;
+      color: #a8a9ab;
+    }
+
+    /* End sec-b */
+    /* Start sec-c */
+    .sec-c {
+      padding-top: var(--section-padding);
+      padding-bottom: var(--section-padding);
+      text-align: center;
+    }
+
+    /* End sec-c */
+    /* Start sec-d */
+    .sec-d {
+      padding-top: var(--section-padding);
+      padding-bottom: var(--section-padding);
+    }
+
+    .sec-d .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 30px;
+    }
+
+    .sec-d .container .box {
+      text-align: center;
+    }
+
+    .sec-d .container .box .content {
+      margin-top: 20px;
+    }
+
+    .sec-d .container .box h3 {
+      color: #4f545a;
+      margin-bottom: 15px;
+    }
+
+    .sec-d .container .box p {
+      line-height: 1.7;
+      color: #a3a4a6;
+    }
+
+    .sec-d .container .box:nth-child(2) {
+      transform: translateY(10px);
+    }
+
+    .sec-d .container .box:last-child {
+      transform: translateY(10px);
+    }
+
+    /* End sec-d */
+    /* Start sec-e */
+    .sec-e {
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+
+    .sec-e .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+      gap: 30px;
+    }
+
+    .sec-e .container.box {
+      text-align: center;
+    }
+
+    /* End sec-e */
+    /* Start sec-f */
+    .sec-f {
+      padding-top: var(--section-padding);
+      padding-bottom: var(--section-padding);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .sec-f .top-content {
+      margin-bottom: 30px;
+    }
+
+    /* End sec-f */
+    /* Start sec-g(footer) */
+    .footer {
+      background-color: #f5f6f8;
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
+
+    .footer .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .footer .container .left-content {
+      display: flex;
+      align-items: center;
+    }
+
+    .footer .container .left-content .f-links {
+      display: flex;
+      margin-left: 100px;
+    }
+
+    .footer .container .left-content .f-links ul:not(:last-child) {
+      margin-right: 15px;
+    }
+
+    .footer .container .left-content .f-links ul li {
+      padding: 15px 20px;
+      cursor: pointer;
+      transition: .5s;
+    }
+
+    .footer .container .left-content .f-links ul li:hover {
+      color: #5dccbb;
+    }
+
+    .footer .container .icons-l {
+      display: flex;
+    }
+
+    .footer .container .icons-l i {
+      font-size: 22px;
+      margin-right: 15px;
+      color: #000000;
+      cursor: pointer;
+      transition: .5s;
+    }
+
+    .footer .container .icons-l a {
+      display: block;
+      margin-right: 15px;
+      width: 19px;
+    }
+
+    .footer .container .icons-l i:hover {
+      color: #5dccbb;
+    }
+
+    /* End sec-g(footer) */
+    /* Small */
+    @media (min-width: 768px) {
+      .container {
+        width: 750px;
+      }
+    }
+
+    /* Medium */
+    @media (min-width: 992px) {
+      .container {
+        width: 970px;
+      }
+    }
+
+    /* Large */
+    @media (min-width: 1200px) {
+      .container {
+        width: 1170px;
+      }
+    }
+
+    @media (max-width: 767px) {
+      .landing p {
+        width: 100%;
+      }
+
+      .landing {
+        text-align: center;
+      }
+
+      .buttons button:first-child {
+        margin: 0;
+      }
+
+      .top-content {
+        width: 100%;
+      }
+
+      .sec-b .b-b-c {
+        flex-direction: column;
+      }
+
+      .sec-b .b-b-c ul {
+        margin: 35px 0 0;
+        text-align: center;
+      }
+
+      .b-b-c img {
+        max-width: 100%;
+      }
+
+      .footer .container {
+        flex-direction: column;
+      }
+
+      .footer .container .left-content {
+        flex-direction: column;
+      }
+
+      .footer .container .left-content .f-links {
+        margin: 20px auto 30px;
+      }
+
+      .footer .container .left-content .f-links ul li {
+        padding: 15px 7px;
+      }
+
+      .sec-e .container img {
+        width: 210px;
+        margin: 0 auto;
+      }
+
+      .sec-e .container {
+        gap: 55px;
+      }
+
+      .sec-c img {
+        max-width: 100%;
+      }
+    }
+
+    @media (min-width: 768px) and (max-width: 1199px) {
+      .sec-b .b-b-c {
+        flex-direction: column;
+      }
+
+      .sec-b .b-b-c ul {
+        margin: 35px 0 0;
+        text-align: center;
+      }
+
+      .b-b-c img {
+        max-width: 100%;
+      }
+
+      .sec-b .b-b-c ul li {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Start Landing -->
+  <div class="landing">
+    <div class="logo">
+      <img src="/images/logo.svg" alt="">
+    </div>
+    <h1> A history of everything you copy</h1>
+    <p>Clipboard allows you to track and organize everything you
+      copy. Instantly access your clipboard on all your devices.</p>
+    <div class="buttons">
+      <button>Download for iOS</button>
+      <button>Download for Mac</button>
+    </div>
+  </div>
+  <!-- End Landing -->
+  <!-- Start sec-b -->
+  <div class="sec-b">
+    <div class="top-content">
+      <h1>Keep track of your snippets</h1>
+      <p> Clipboard instantly stores any item you copy in the cloud,
+        meaning you can access your snippets immediately on all your
+        devices. Our Mac and iOS apps will help you organize everything.</p>
+    </div>
+    <div class="b-b-c">
+      <img src="/images/image-computer.png" alt="">
+      <ul>
+        <li>
+          <h3> Quick Search
+          </h3>
+          <p> Easily search your snippets by content, category, web address, application, and more.
+          </p>
+        </li>
+        <li>
+          <h3> iCloud Sync
+          </h3>
+          <p> Instantly saves and syncs snippets across all your devices.
+          </p>
+        </li>
+        <li>
+          <h3> Complete History
+          </h3>
+          <p> Retrieve any snippets from the first moment you started using the app.
+          </p>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <!-- End sec-b -->
+  <!-- Start sec-c -->
+  <div class="sec-c">
+    <div class="top-content">
+      <h1>Access Clipboard anywhere</h1>
+      <p>Whether you’re on the go, or at your computer, you can access all your Clipboard<br>
+        snippets in a few simple clicks.</p>
+    </div>
+    <img src="/images/image-devices.png" alt="">
+  </div>
+  <!-- End sec-c -->
+  <!-- Start sec-d -->
+  <div class="sec-d">
+    <div class="top-content">
+      <h1>Supercharge your workflow</h1>
+      <p>We’ve got the tools to boost your productivity.</p>
+    </div>
+    <div class="container">
+      <div class="box">
+        <img src="/images/icon-blacklist.svg" alt="">
+        <div class="content">
+          <h3>Create blacklists</h3>
+          <p>
+            Ensure sensitive information never makes its way to your clipboard by excluding certain sources.
+          </p>
+        </div>
+      </div>
+      <div class="box">
+        <img src="/images/icon-text.svg" alt="">
+        <div class="content">
+          <h3>Plain text snippets</h3>
+          <p>
+            Remove unwanted formatting from copied text for a consistent look.
+          </p>
+        </div>
+      </div>
+      <div class="box">
+        <img src="/images//icon-preview.svg" alt="">
+        <div class="content">
+          <h3>Sneak preview</h3>
+          <p>
+            Quick preview of all snippets on your Clipboard for easy access.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End sec-d -->
+  <!-- Start sec-e -->
+  <div class="sec-e">
+    <div class="container">
+      <img src="/images/logo-google.png" alt="">
+      <img src="/images/logo-ibm.png" alt="">
+      <img src="/images/logo-microsoft.png" alt="">
+      <img src="/images/logo-hp.png" alt="">
+      <img src="/images/logo-vector-graphics.png" alt="">
+    </div>
+  </div>
+  <!-- End sec-e -->
+  <!-- Start sec-f -->
+  <div class="sec-f">
+    <div class="top-content">
+      <h1>Clipboard for iOS and Mac OS</h1>
+      <p>
+        Available for free on the App Store. Download for Mac or iOS, sync with iCloud
+        and you’re ready to start adding to your clipboard.
+      </p>
+    </div>
+    <div class="buttons">
+      <button>Download for iOS</button>
+      <button>Download for Mac</button>
+    </div>
+  </div>
+  <!-- End sec-f -->
+  <!-- Start sec-g(footer) -->
+  <div class="footer">
+    <div class="container">
+      <div class="left-content">
+        <img src="/images/logo.svg" alt="" class="logo">
+        <div class="f-links">
+          <ul>
+            <li>FAQs</li>
+            <li>Contact Us</li>
+          </ul>
+          <ul>
+            <li>Privacy Policy</li>
+            <li>Press Kit</li>
+          </ul>
+          <ul>
+            <li>Install Guide</li>
+          </ul>
+        </div>
+      </div>
+      <div class="icons-l">
+        <a href="https://www.facebook.com/profile.php?id=100014953035548">
+          <i class="fa-brands fa-square-facebook"></i>
+        </a>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-instagram"></i>
+      </div>
+    </div>
+  </div>
+  <!-- End sec-g(footer) -->
+</body>
+
+</html>
+<!--
+
+  
+  
+  
+  
+  
+  
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Your Name Here</a>.
+    </p>
+  </footer>
+ -->
